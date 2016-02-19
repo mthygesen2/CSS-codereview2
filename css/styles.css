@@ -24,18 +24,19 @@ body {
 body {
   background: black;
   margin: 20px;
+  font-family: 'News Cycle', sans-serif;
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1.5em;
   padding: 18px 0 8px 20px;
-  font-weight: normal;
+  font-weight: bold;
+  font-family: 'Rock Salt', cursive;
 }
 
 header {
   background: white;
-  text-transform: uppercase;
 }
 
 nav {
@@ -52,14 +53,23 @@ nav ul {
 nav ul li {
   display: inline-block;
   padding: 8px 0;
+  position: relative;
 }
 
 nav ul li a {
   padding: 8px 0;
-  margin-right: 10px;
-  font-size: 0.7em;
+  margin-right: 5px;
+  font-size: 1em;
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
+}
+
+nav ul li:nth-child(2) a:before,
+nav ul li:nth-child(3) a:before,
+nav ul li:nth-child(4) a:before,
+nav ul li:nth-child(5) a:before{
+    content:"• ";
 }
 
 .caption {
@@ -72,6 +82,7 @@ nav ul li a {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .caption h1 {
@@ -113,6 +124,15 @@ main section:last-child p {
   margin-top: 40px;
 }
 
+.signature{
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5em;
+  padding-left: 50%;
+}
+
+/* MEDIA QUERIES START NOW  */
+
+
 @media screen and (min-width: 600px) {
   body {
     margin: 0;
@@ -138,6 +158,12 @@ main section:last-child p {
   nav li a {
     padding: 0;
   }
+  nav ul li:nth-child(2) a:before,
+  nav ul li:nth-child(3) a:before,
+  nav ul li:nth-child(4) a:before,
+  nav ul li:nth-child(5) a:before{
+    display: none;
+}
   .imageDiv {
     height: 100%;
     width: 100%;
@@ -179,12 +205,12 @@ main section:last-child p {
     /*     margin: 0 5px 0 0; */
     padding: 0 1%;
     width: 49%;
-    background: #273f7a;
+    background:#005254;
     transition: background-color 1s;
     height: 100%;
   }
   main section:nth-child(2):hover {
-    background-color: black;
+    background-color: #b2cbcb;
     transition: background-color 1s;
   }
   main section:nth-child(2) a,
