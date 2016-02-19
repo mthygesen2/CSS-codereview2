@@ -22,7 +22,7 @@ body {
 }
 
 body {
-  background: black;
+  background: #4E5152;
   margin: 20px;
   font-family: 'News Cycle', sans-serif;
 }
@@ -68,8 +68,8 @@ nav ul li a {
 nav ul li:nth-child(2) a:before,
 nav ul li:nth-child(3) a:before,
 nav ul li:nth-child(4) a:before,
-nav ul li:nth-child(5) a:before{
-    content:"• ";
+nav ul li:nth-child(5) a:before {
+  content: "• ";
 }
 
 .caption {
@@ -119,19 +119,19 @@ main section:nth-child(2) a {
 main section:last-child p {
   color: black;
   padding: 25px;
-  background-color: #fff;
+  background-color: #CFECF0;
   line-height: 1.5em;
   margin-top: 40px;
 }
 
-.signature{
+.signature {
   font-family: 'Satisfy', cursive;
   font-size: 1.5em;
   padding-left: 50%;
 }
 
-/* MEDIA QUERIES START NOW  */
 
+/* MEDIA QUERIES START NOW  */
 
 @media screen and (min-width: 600px) {
   body {
@@ -161,9 +161,9 @@ main section:last-child p {
   nav ul li:nth-child(2) a:before,
   nav ul li:nth-child(3) a:before,
   nav ul li:nth-child(4) a:before,
-  nav ul li:nth-child(5) a:before{
+  nav ul li:nth-child(5) a:before {
     display: none;
-}
+  }
   .imageDiv {
     height: 100%;
     width: 100%;
@@ -202,16 +202,28 @@ main section:last-child p {
   main section:nth-child(2) {
     display: inline-block;
     float: left;
-    /*     margin: 0 5px 0 0; */
     padding: 0 1%;
     width: 49%;
-    background:#005254;
+    background: #005254;
     transition: background-color 1s;
     height: 100%;
   }
   main section:nth-child(2):hover {
     background-color: #b2cbcb;
     transition: background-color 1s;
+  }
+  main section:nth-child(2) a {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 2;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .hotspot {
+    font-family: 'Rock Salt', cursive;
+    text-transform: none;
   }
   main section:nth-child(2) a,
   main section:last-child p {
@@ -225,14 +237,13 @@ main section:last-child p {
     display: inline-block;
     float: right;
     width: 49%;
-    /*     margin: 0 0 0 5px; */
     padding: 0 1%;
     height: 100%;
     background: black;
   }
   main section:last-child p {
     margin: 0;
-    padding: 0;
+    padding: 0 5%;
   }
 }
 
@@ -258,12 +269,12 @@ main section:last-child p {
     margin-bottom: 1.5vh;
   }
   main {
-    width: 28.5vw; /*leaves white margin to the left of main*/
+    width: 28.5vw;
+    /*leaves white margin to the left of main*/
     height: 100vh;
     display: block;
     float: right;
   }
-
   .imageDiv img {
     display: inline-block;
     width: 100vw;
