@@ -31,6 +31,11 @@ font-weight: bold;
 font-family: 'Rock Salt', cursive;
 }
 
+header h1 a {
+text-decoration: none;
+color: black;
+}
+
 header {
 background: white;
 }
@@ -89,6 +94,12 @@ margin-top: 5%;
 padding: 5%;
 }
 
+#aboutMao h2,
+#aboutKat h2 {
+  font-family: 'Satisfy', cursive;
+  font-size: 2em;
+}
+
 section h2 {
 font-weight: normal;
 letter-spacing: 2px;
@@ -105,12 +116,12 @@ float: right;
 }
 
 footer {
-margin-top: 5vh;
+margin-top: 1vh;
 }
 
 footer a {
 text-decoration: none;
-color: white;
+color: black;
 padding: 0 2%;
 }
 /* MEDIA QUERIES START HERE!!!!!!!!! */
@@ -155,66 +166,60 @@ nav ul li:nth-child(5) a:before {
   height: 69vh;
   object-fit: cover;
 }
-footer a {
-  color: #FF7F50;
-  font-size: 2em;
-}
-
 /*     MEDIA QUERY FOR LARGER SCREENS */
+@media screen and (min-width: 1500px) {
+  body {
+    margin: 0;
+  }
+  main {
+    overflow: auto;
+  }
+  .imgUs {
+    width: 70vw;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    float: left;
+    margin-bottom: 0;
+  }
+  .imgUs img {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .katMao {
+    margin: 0;
+    width: 27vw;
+    height: 100vh;
+    height: auto;
+    float: right;
+    display: block;
+  }
+  #aboutMao,
+  #aboutKat {
+    margin: 0;
+    height: 50vh;
+    width: 100%;
+  }
 
-@media screen and (min-width: 1150px) {
-body {
-margin: 0;
-}
-main {
-overflow: auto;
-}
-.imgUs  {
-width: 70vw;
-height: 100vh;
-margin: 0;
-display: block;
-float: left;
-margin-bottom: 0;
+  #aboutMao footer,
+  #aboutKat footer {
+    margin-top: 25%;
+  }
 
-}
-.imgUs img {
-display: inline-block;
-width: 100vw;
-height: 100vh;
-object-fit: cover;
-}
+  #aboutText {
+    position: absolute;
+    width: 30vw;
+    bottom: 50px;
+    left: 50px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 50px;
+  }
 
-#aboutKat, #aboutMao {
-margin: 0;
-width: 28.5vw;
-height: auto;
-float: right;
-display: block;
-}
-#aboutText {
-position: absolute;
-width: 30vw;
-bottom: 50px;
-left: 50px;
-background: rgba(255, 255, 255, 0.75);
 
-}
-/*   main section:nth-child(2) {
-margin-bottom: 1.5vh;
-}
-main {
-width: 28.5vw;
-/*leaves white margin to the left of main*/
-/*     height: 100vh;
-display: block;
-float: right;
-} */
-/*   .imageUs img {
-display: inline-block;
-width: 100vw;
-height: 100vh;
-object-fit: cover;
-}
-*/
+  main {
+    margin-bottom: 0;
+    overflow: hidden;
+  }
 }
