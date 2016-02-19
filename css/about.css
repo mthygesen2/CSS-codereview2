@@ -1,0 +1,166 @@
+/*
+*  *:not(body):not(html) {
+box-sizing: border-box;
+border: 1px dashed #000;
+}
+.columns {
+min-height: 100px !important;
+}  */
+
+
+/* TESTING */
+
+* {
+box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+}
+
+body {
+background: #4E5152;
+margin: 20px;
+font-family: 'News Cycle', sans-serif;
+}
+
+header h1 {
+margin: 0;
+font-size: 1.5em;
+padding: 18px 0 8px 20px;
+font-weight: bold;
+font-family: 'Rock Salt', cursive;
+}
+
+header {
+background: white;
+}
+
+nav {
+background: #f4f4f4;
+padding-left: 20px;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+display: inline-block;
+padding: 8px 0;
+position: relative;
+}
+
+nav ul li a {
+padding: 8px 0;
+margin-right: 5px;
+font-size: 1em;
+text-decoration: none;
+color: black;
+text-transform: uppercase;
+}
+
+nav ul li:nth-child(2) a:before,
+nav ul li:nth-child(3) a:before,
+nav ul li:nth-child(4) a:before,
+nav ul li:nth-child(5) a:before {
+content: "• ";
+}
+
+.imgUs {
+margin: 1vh 0;
+}
+
+.imgUs img {
+max-width: 100%;
+}
+
+#aboutKat {
+background: white;
+margin-top: 5%;
+padding: 5%;
+}
+
+#aboutText,
+#aboutMao {
+background: #CFECF0;
+margin-top: 5%;
+padding: 5%;
+}
+
+section h2 {
+font-weight: normal;
+letter-spacing: 2px;
+}
+
+main section {
+overflow: auto;
+}
+
+main section img {
+max-width: 100%;
+height: 20vh;
+float: right;
+}
+
+footer {
+margin-top: 5vh;
+}
+
+footer a {
+text-decoration: none;
+color: white;
+padding: 0 2%;
+}
+
+
+/* MEDIA QUERIES START HERE!!!!!!!!! */
+
+@media screen and (min-width: 600px) {
+body {
+  margin: 0;
+  background: white;
+}
+header {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background: rgba(255, 255, 255, 0.75);
+}
+nav {
+  background: none;
+  padding-bottom: 30px;
+}
+header h1 {
+  padding: 18px 20px 8px 20px;
+}
+nav ul li {
+  display: block;
+  padding: 0 0 2px 0;
+}
+nav li a {
+  padding: 0;
+}
+nav ul li:nth-child(2) a:before,
+nav ul li:nth-child(3) a:before,
+nav ul li:nth-child(4) a:before,
+nav ul li:nth-child(5) a:before {
+  display: none;
+}
+#aboutKat {
+border: 1px solid #CFECF0;
+}
+
+.imgUs img {
+  display: block;
+  width: 100vw;
+  height: 69vh;
+  object-fit: cover;
+}
+footer a {
+  color: #FF7F50;
+  font-size: 2em;
+}
