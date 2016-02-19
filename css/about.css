@@ -6,8 +6,6 @@ border: 1px dashed #000;
 .columns {
 min-height: 100px !important;
 }  */
-
-
 /* TESTING */
 
 * {
@@ -115,8 +113,6 @@ text-decoration: none;
 color: white;
 padding: 0 2%;
 }
-
-
 /* MEDIA QUERIES START HERE!!!!!!!!! */
 
 @media screen and (min-width: 600px) {
@@ -151,9 +147,8 @@ nav ul li:nth-child(5) a:before {
   display: none;
 }
 #aboutKat {
-border: 1px solid #CFECF0;
+  border: 1px solid #CFECF0;
 }
-
 .imgUs img {
   display: block;
   width: 100vw;
@@ -163,4 +158,63 @@ border: 1px solid #CFECF0;
 footer a {
   color: #FF7F50;
   font-size: 2em;
+}
+
+/*     MEDIA QUERY FOR LARGER SCREENS */
+
+@media screen and (min-width: 1150px) {
+body {
+margin: 0;
+}
+main {
+overflow: auto;
+}
+.imgUs  {
+width: 70vw;
+height: 100vh;
+margin: 0;
+display: block;
+float: left;
+margin-bottom: 0;
+
+}
+.imgUs img {
+display: inline-block;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+}
+
+#aboutKat, #aboutMao {
+margin: 0;
+width: 28.5vw;
+height: auto;
+float: right;
+display: block;
+}
+#aboutText {
+position: absolute;
+width: 30vw;
+bottom: 50px;
+left: 50px;
+background: rgba(255, 255, 255, 0.75);
+
+}
+/*   main section:nth-child(2) {
+margin-bottom: 1.5vh;
+}
+main {
+width: 28.5vw;
+/*leaves white margin to the left of main*/
+/*     height: 100vh;
+display: block;
+float: right;
+} */
+/*   .imageUs img {
+display: inline-block;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+}
+*/
 }
