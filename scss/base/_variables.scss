@@ -15,3 +15,15 @@ $backg-para-hover  : #b2cbcb;
 // Nav Colors
 
 $nav-color    : #f4f4f4;
+
+//Media Query
+
+$screen-narrow : '(min-width: 600px)';
+$screen-wide : '(min-width: 1150px)';
+
+//Font Stack
+
+$stack-julius :  'Julius Sans One', sans-serif;
+$stack-satisfy :'Satisfy', cursive;
+$stack-rock: 'Rock Salt', cursive;
+$stack-news :'News Cycle', sans-serif;

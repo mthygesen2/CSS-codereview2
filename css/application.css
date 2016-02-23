@@ -9,14 +9,24 @@ body {
 body {
   background: #4E5152;
   margin: 20px;
-  font-family: 'News Cycle', sans-serif; }
+  font-family: "News Cycle", sans-serif; }
+  @media (min-width: 600px) {
+    body {
+      margin: 0;
+      background: white; } }
+  @media (min-width: 1150px) {
+    body {
+      margin: 0; } }
 
 header h1 {
-  margin: 0;
+  font-family: "Rock Salt", cursive;
   font-size: 1.5em;
-  padding: 18px 0 8px 20px;
   font-weight: bold;
-  font-family: 'Rock Salt', cursive; }
+  margin: 0;
+  padding: 18px 0 8px 20px; }
+  @media (min-width: 600px) {
+    header h1 {
+      padding: 18px 20px 8px 20px; } }
 
 header h1 a {
   text-decoration: none;
@@ -24,10 +34,20 @@ header h1 a {
 
 header {
   background: white; }
+  @media (min-width: 600px) {
+    header {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      background: rgba(255, 255, 255, 0.75); } }
 
 nav {
   background: #f4f4f4;
   padding-left: 20px; }
+  @media (min-width: 600px) {
+    nav {
+      background: none;
+      padding-bottom: 30px; } }
 
 nav ul {
   list-style: none;
@@ -38,6 +58,10 @@ nav ul li {
   display: inline-block;
   padding: 8px 0;
   position: relative; }
+  @media (min-width: 600px) {
+    nav ul li {
+      display: block;
+      padding: 0 0 2px 0; } }
 
 nav ul li a {
   padding: 8px 0;
@@ -46,38 +70,49 @@ nav ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase; }
+  @media (min-width: 600px) {
+    nav ul li a {
+      padding: 0; } }
 
 nav ul li:nth-child(2) a:before,
 nav ul li:nth-child(3) a:before,
 nav ul li:nth-child(4) a:before,
 nav ul li:nth-child(5) a:before {
   content: "• "; }
+  @media (min-width: 600px) {
+    nav ul li:nth-child(2) a:before,
+    nav ul li:nth-child(3) a:before,
+    nav ul li:nth-child(4) a:before,
+    nav ul li:nth-child(5) a:before {
+      display: none; } }
 
 .caption {
   margin: 20px 0;
   color: white; }
+  @media (min-width: 600px) {
+    .caption {
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+      margin: 0; } }
 
 .caption h1,
 .caption h4 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  font-family: 'Julius Sans One', sans-serif; }
+  font-family: "Julius Sans One", sans-serif; }
 
 .caption h1 {
   font-size: 1.2em;
   font-weight: normal; }
+  @media (min-width: 600px) {
+    .caption h1 {
+      margin-bottom: 5px; } }
 
 .caption h4 {
   font-family: sans-serif;
   font-size: 0.7em; }
-
-.imageDiv {
-  background: white; }
-
-.imageDiv img {
-  width: 100%;
-  display: block; }
 
 main section:first-child a,
 main section:nth-child(2) a {
@@ -96,10 +131,128 @@ main section:last-child p {
   background-color: #CFECF0;
   line-height: 1.5em;
   margin-top: 40px; }
+  @media (min-width: 600px) {
+    main section:last-child p {
+      margin: 0;
+      padding: 0 5%; } }
 
 .signature {
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   font-size: 1.5em;
   padding-left: 50%; }
+
+@media (min-width: 600px) {
+  main {
+    height: 30vh;
+    min-height: 250px;
+    z-index: 9999;
+    overflow: auto; } }
+@media (min-width: 1150px) {
+  main {
+    width: 28.5vw;
+    /*leaves white margin to the left of main*/
+    height: 100vh;
+    display: block;
+    float: right; } }
+
+@media (min-width: 600px) {
+  .primary {
+    position: relative;
+    height: 69vh;
+    margin-bottom: 1vh; } }
+@media (min-width: 1150px) {
+  .primary {
+    width: 70vw;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    float: left;
+    margin-bottom: 0; } }
+
+@media (min-width: 600px) {
+  main section:first-child {
+    display: none; } }
+
+@media (min-width: 600px) {
+  main section:nth-child(2) {
+    display: inline-block;
+    float: left;
+    padding: 0 1%;
+    width: 49%;
+    background: #005254;
+    transition: background-color 1s;
+    height: 100%; } }
+@media (min-width: 1150px) {
+  main section:nth-child(2) {
+    margin-bottom: 1.5vh; } }
+
+@media (min-width: 600px) {
+  main section:nth-child(2):hover {
+    background-color: #b2cbcb;
+    transition: background-color 1s; } }
+
+@media (min-width: 600px) {
+  main section:nth-child(2) a {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 2;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0; } }
+
+@media (min-width: 600px) {
+  .hotspot {
+    font-family: "Rock Salt", cursive;
+    text-transform: none; } }
+
+@media (min-width: 600px) {
+  main section:nth-child(2) a,
+  main section:last-child p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background: none; } }
+
+@media (min-width: 600px) {
+  main section:last-child {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    float: right;
+    padding: 0 1%;
+    background: black; } }
+
+@media (min-width: 1150px) {
+  main section:nth-child(2),
+  main section:last-child {
+    width: 100%;
+    height: 49.25vh; } }
+
+.imageDiv {
+  background: white; }
+  @media (min-width: 600px) {
+    .imageDiv {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #fff; } }
+
+.imageDiv img {
+  width: 100%;
+  display: block; }
+  @media (min-width: 600px) {
+    .imageDiv img {
+      width: 100vw;
+      height: 69vh;
+      display: block;
+      object-fit: cover; } }
+  @media (min-width: 1150px) {
+    .imageDiv img {
+      width: 100vw;
+      height: 100vh;
+      display: inline-block;
+      object-fit: cover; } }
 
 /*# sourceMappingURL=application.css.map */

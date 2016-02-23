@@ -1,0 +1,11 @@
+@mixin font($font:null, $size:null, $weight:null) {
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin size($width, $height:null, $display:null) {
+  width: $width;
+  height: $height;
+  display: $display;
+}

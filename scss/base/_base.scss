@@ -8,7 +8,16 @@ body {
 }
 
 body {
-  background: #4E5152;
+  background: $backg-dark;
   margin: 20px;
-  font-family: 'News Cycle', sans-serif;
+  font-family: $stack-news;
+
+  @media #{$screen-narrow} {
+    margin: 0;
+    background: $backg-white;
+  }
+
+  @media #{$screen-wide} {
+    margin: 0;
+  }
 }

@@ -1,0 +1,21 @@
+.imageDiv {
+  background: $backg-white;
+
+  @media #{$screen-narrow} {
+    @include size(100%, 100%);
+    overflow: hidden;
+    background: $backg-black;
+  }
+}
+
+.imageDiv img {
+  @include size(100%, $display: block);
+    @media #{$screen-narrow} {
+      @include size(100vw, 69vh, block);
+      object-fit: cover;
+    }
+  @media #{$screen-wide} {
+    @include size(100vw, 100vh, inline-block);
+    object-fit: cover;
+  }
+}
