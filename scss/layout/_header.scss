@@ -1,0 +1,47 @@
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  padding: 18px 0 8px 20px;
+  font-weight: bold;
+  font-family: 'Rock Salt', cursive;
+}
+header h1 a{
+  text-decoration: none;
+  color: black;
+}
+header {
+  background: white;
+}
+
+nav {
+  background: #f4f4f4;
+  padding-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 8px 0;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 8px 0;
+  margin-right: 5px;
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav ul li:nth-child(2) a:before,
+nav ul li:nth-child(3) a:before,
+nav ul li:nth-child(4) a:before,
+nav ul li:nth-child(5) a:before {
+  content: "• ";
+}
