@@ -1,6 +1,6 @@
 .caption {
   margin: 20px 0;
-  color: white;
+  color: $text-light;
 }
 
 .caption h1,
@@ -22,7 +22,7 @@
 }
 
 .imageDiv {
-  background: white;
+  background: $backg-white;
 }
 
 .imageDiv img {
@@ -33,7 +33,7 @@
 main section:first-child a,
 main section:nth-child(2) a {
   text-decoration: none;
-  color: black;
+  color: $text-dark;
   display: block;
   padding: 12px 0 12px 10px;
   text-transform: uppercase;
@@ -43,9 +43,9 @@ main section:nth-child(2) a {
 }
 
 main section:last-child p {
-  color: black;
+  color: $text-dark;
   padding: 25px;
-  background-color: #CFECF0;
+  background-color: $backg-light;
   line-height: 1.5em;
   margin-top: 40px;
 }
