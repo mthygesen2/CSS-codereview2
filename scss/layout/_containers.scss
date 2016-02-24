@@ -68,10 +68,8 @@ main section:last-child p {
       overflow: auto;
     }
     @media #{$screen-wide} {
-      width: 28.5vw;
+      @include size(28.5vw, 100vh, block);
       /*leaves white margin to the left of main*/
-      height: 100vh;
-      display: block;
       float: right;
     }
   }
@@ -82,10 +80,8 @@ main section:last-child p {
     margin-bottom: 1vh;
   }
   @media #{$screen-wide} {
-      width: 70vw;
-      height: 100vh;
+    @include size(70vw, 100vh, block);
       margin: 0;
-      display: block;
       float: left;
       margin-bottom: 0;
     }
@@ -98,13 +94,11 @@ main section:last-child p {
   }
   main section:nth-child(2) {
     @media #{$screen-narrow} {
-      display: inline-block;
+      @include size(49%, 100%, inline-block);
       float: left;
       padding: 0 1%;
-      width: 49%;
       background: $backg-para;
       transition: background-color 1s;
-      height: 100%;
     }
     @media #{$screen-wide} {
       margin-bottom: 1.5vh;
