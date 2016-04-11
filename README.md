@@ -1,17 +1,17 @@
 # _Mondrian Style Code Review 2_
 
-#### _Mondrian Style site, February 19, 2016_
+#### Mondrian Style site, February 19, 2016
 
-#### By _**Mao Thygesen**_
+#### By **Mao Thygesen**
 
 ## Description
 
-_This is a mock site for a blog that has a Mondrian style design. It was created for the Epicodus CSS class._
+_This is a mock site for a blog that has a Mondrian style design. The main purpose of this application is to show the understanding of reponsive design. It is compatible with many media queries. It was created for the Epicodus CSS class. It was modeled off of [Andersson-Wise] (http://www.anderssonwise.com/) _
 
 
 ## Known Bugs
 
-_Only links to About and to Hot Cakes are currently working. The about us has a placeholder image for Kat. _
+Only links to About and to Hot Cakes are currently working. The about us has a placeholder image for Kat. 
 
 ## Support and contact details
 
